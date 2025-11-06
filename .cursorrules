@@ -1,0 +1,59 @@
+# Cursor Project Rules for React Landing Page
+
+project_type: react
+language: typescript
+framework: react
+
+style_guide:
+  code_style: prettier
+  component_style: functional
+  hooks_preference: true
+  use_strict_typing: true
+  file_naming: kebab-case
+  prefer_arrow_functions: true
+
+folders:
+  include:
+    - src/
+    - public/
+  exclude:
+    - node_modules/
+    - dist/
+    - build/
+
+ai_context:
+  description: >
+    This is a modern, responsive React landing page with clean design,
+    built using functional components, TailwindCSS for styling, and
+    React Router for navigation between sections.
+  goals:
+    - Keep components modular and reusable.
+    - Maintain accessibility (ARIA labels, semantic HTML).
+    - Ensure mobile-first responsive design.
+    - Avoid inline styles; prefer utility classes or CSS modules.
+
+generation_rules:
+  - Use TailwindCSS for layout and colors.
+  - Create components under `src/components/`.
+  - When generating text content, use neutral English placeholder text.
+  - Always include prop types or interfaces.
+  - Keep functions under 50 lines unless necessary.
+  - Follow the order: imports → constants → component → export.
+
+naming_conventions:
+  components: PascalCase
+  files: kebab-case
+  hooks: useX format (e.g. useScroll)
+  css_classes: tailwind utility first
+
+review_guidelines:
+  - Prefer semantic HTML elements.
+  - Avoid redundant div wrappers.
+  - Optimize for readability and reusability.
+  - Write short comments only where logic isn’t obvious.
+
+references:
+  - path: ../portfolio_reference/raildevhub-master/
+    note: >
+      Use this project as a content guidance, add features and informations
+      to the project using this reference project.
