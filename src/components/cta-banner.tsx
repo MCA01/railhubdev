@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { useLanguage } from '../contexts/language-context';
 
 interface CtaBannerProps {
   title: string;
